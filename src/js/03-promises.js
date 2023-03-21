@@ -45,4 +45,7 @@ function onSubmitForm(e) {
     delay += Number(stepRef.value);
     position += 1;
   }
+  e.currentTarget.reset()
 }
+
+

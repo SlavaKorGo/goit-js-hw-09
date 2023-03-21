@@ -16,10 +16,13 @@ body.style.backgroundColor = getRandomHexColor();
 startBtn.addEventListener('click', () => {
     timerId = setInterval(colorSwither, 1000); 
     startBtn.disabled = true;
+    stopBtn.disabled = false;
 });
 
 stopBtn.addEventListener('click',() => {
     clearInterval(timerId);
     startBtn.disabled = false;
+    stopBtn.disabled = true;
 });
+
 
