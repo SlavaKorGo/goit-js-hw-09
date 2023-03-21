@@ -8,6 +8,7 @@ let timerId = null;
 function getRandomHexColor() {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   }
+ stopBtn.setAttribute('disabled', '');
 
   const colorSwither = () => {
 body.style.backgroundColor = getRandomHexColor();
@@ -24,5 +25,3 @@ stopBtn.addEventListener('click',() => {
     startBtn.disabled = false;
     stopBtn.disabled = true;
 });
-
-
